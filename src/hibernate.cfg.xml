@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">
+            <![CDATA[jdbc:mysql://192.168.2.63:3306/neeq?useUnicode=true&amp;characterEncoding=UTF-8]]></property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <mapping resource="com/entity/NeeqCompanyEntity.hbm.xml"/>
+        <mapping resource="com/entity/NeeqIndustryCategoryEntity.hbm.xml"/>
+        <mapping resource="com/entity/NeeqSpecialEntity.hbm.xml"/>
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.entity.NeeqCompanyEntity" table="neeq_company" schema="neeq">
+        <id name="id" column="id"/>
+        <property name="code" column="code"/>
+        <property name="name" column="name"/>
+        <property name="shortname" column="shortname"/>
+        <property name="transferMode" column="transfer_mode"/>
+        <property name="industryid" column="industryid"/>
+        <property name="specialid" column="specialid"/>
+        <property name="area" column="area"/>
+        <property name="listingDate" column="listing_date"/>
+        <property name="website" column="website"/>
+        <property name="address" column="address"/>
+        <property name="phone" column="phone"/>
+        <property name="postcode" column="postcode"/>
+        <property name="type" column="type"/>
+        <property name="fax" column="fax"/>
+        <property name="legalRepresentative" column="legal_representative"/>
+        <property name="secretaries" column="secretaries"/>
+        <property name="desc" column="desc"/>
+        <property name="totalStockEquity" column="total_stock_equity"/>
+        <property name="englishName" column="english_name"/>
+        <property name="status" column="status"/>
+        <property name="createdAt" column="created_at"/>
+        <property name="updateAt" column="update_at"/>
+    </class>
+</hibernate-mapping>

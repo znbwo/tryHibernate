@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.entity.NeeqIndustryCategoryEntity" table="neeq_industry_category" schema="neeq">
+        <id name="id" column="id"/>
+        <property name="name" column="name"/>
+        <property name="parentid" column="parentid"/>
+        <property name="smallPhoto" column="small_photo"/>
+        <property name="bigPhoto" column="big_photo"/>
+        <property name="savePhoto" column="save_photo"/>
+        <property name="type" column="type"/>
+        <property name="status" column="status"/>
+        <property name="createdAt" column="created_at"/>
+        <property name="updateAt" column="update_at"/>
+    </class>
+</hibernate-mapping>

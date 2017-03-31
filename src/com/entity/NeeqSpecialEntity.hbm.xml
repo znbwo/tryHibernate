@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.entity.NeeqSpecialEntity" table="neeq_special" schema="neeq">
+        <id name="id" column="id"/>
+        <property name="name" column="name"/>
+        <property name="fullName" column="full_name"/>
+        <property name="foundTime" column="found_time"/>
+        <property name="legalRepresentative" column="legal_representative"/>
+        <property name="generalManager" column="general_manager"/>
+        <property name="registeredCapital" column="registered_capital"/>
+        <property name="website" column="website"/>
+        <property name="netAsset" column="net_asset"/>
+        <property name="netCapital" column="net_capital"/>
+        <property name="salesNum" column="sales_num"/>
+        <property name="officialAddress" column="official_address"/>
+        <property name="post" column="post"/>
+        <property name="address" column="address"/>
+        <property name="email" column="email"/>
+        <property name="licenseCode" column="license_code"/>
+        <property name="type" column="type"/>
+        <property name="business" column="business"/>
+        <property name="summary" column="summary"/>
+        <property name="complaintCall" column="complaint_call"/>
+        <property name="info" column="info"/>
+        <property name="isNeeq" column="is_neeq"/>
+        <property name="status" column="status"/>
+        <property name="createdAt" column="created_at"/>
+        <property name="updateAt" column="update_at"/>
+    </class>
+</hibernate-mapping>
